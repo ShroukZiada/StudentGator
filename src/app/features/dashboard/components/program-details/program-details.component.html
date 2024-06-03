@@ -1,0 +1,56 @@
+<app-nav-bar-section></app-nav-bar-section>
+<section class="programDetails bg-light px-0">
+ <div class="container">
+  <div class="row py-5 vh-100 justify-content-between align-items-center">
+   <div class="col-md-6">
+    <div class="imageBox">
+     <img [src]="ProgramList.coverpic" class="w-100 h-100" alt="">
+    </div>
+   </div>
+   <div class="col-md-6">
+    <div class="contentBox">
+     <mat-card-content>
+      <mat-card-header>
+       <h1>{{ProgramList.category}}</h1>
+      </mat-card-header>
+      <mat-card-title>
+       <h5>{{ProgramList.progName}}</h5>
+      </mat-card-title>
+      <mat-card-subtitle>
+       <p>{{ProgramList.schoolName}}</p>
+      </mat-card-subtitle>
+      <mat-card-content>
+       <p>{{ProgramList.desc}}</p>
+      </mat-card-content>
+      <mat-card-footer>
+       <div class=" d-flex justify-content-between px-2 mt-3 ">
+        <div class="d-flex">
+         <mat-icon class="mt-2 icon">calendar_month</mat-icon>
+         <small class="mt-2">{{ProgramList.start_date}}</small>
+        </div>
+        <div class="d-flex">
+         <mat-icon class="mt-2 icon">schedule</mat-icon>
+         <small class="mt-2">{{ProgramList.lenght + 'Years'}}</small>
+        </div>
+       </div>
+       <div class=" d-flex justify-content-between px-2">
+        <div class="d-flex">
+         <mat-icon class="mt-2 icon">language</mat-icon>
+         <small class="mt-2">{{ProgramList.lang}}</small>
+        </div>
+        <div class="d-flex">
+         <mat-icon class="mt-2 icon">location_on</mat-icon>
+         <p class="mt-2">{{ProgramList.city }}</p>
+        </div>
+       </div>
+      </mat-card-footer>
+     </mat-card-content>
+     <div class="button">
+      <button class="btn btn-outline-success w-50" routerLink="/home">Go Home</button>
+     </div>
+    </div>
+   </div>
+  </div>
+
+ </div>
+</section>

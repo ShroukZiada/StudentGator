@@ -1,0 +1,39 @@
+@use '../Variables' as *;
+
+
+.footer {
+ background-color: $main-Color;
+ // height: 500px;
+
+ .RH {
+  height: 50vh;
+ }
+
+ .footIcon {
+  a {
+   border: 1px solid #ffff;
+   border-radius: 50%;
+   padding: 5px;
+   cursor: pointer;
+  }
+ }
+
+ .upperFooter {
+  background-color: $lower-header-section;
+  position: absolute;
+  top: -48px;
+  // right: 353px;
+  width: 80%;
+  border-radius: 15px;
+ }
+
+ .headerInput {
+  .iconBg {
+   width: 200px;
+   border: none;
+   right: 1px;
+   top: 12px;
+  }
+ }
+
+}

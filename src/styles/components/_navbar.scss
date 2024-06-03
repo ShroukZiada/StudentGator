@@ -1,0 +1,29 @@
+@use '../Variables' as *;
+
+nav {
+
+ .navbar-nav {
+  .nav-item {
+   .nav-link {
+    color: $text-Color;
+    font-size: $nav-Font-Size;
+
+    &:hover::before {
+     position: absolute;
+     content: "";
+     width: 79px;
+     height: 2px;
+     background-color: $main-Color;
+     top: 50px;
+     transition: all ease-out 0.5;
+    }
+
+    &:hover {
+     color: $main-Color
+    }
+   }
+
+
+  }
+ }
+}

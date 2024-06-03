@@ -1,0 +1,57 @@
+@use '../Variables' as *;
+
+.home {
+ color: $text-Color ;
+
+ .mat-mdc-card {
+  .logo {
+   background-color: white;
+   bottom: -19px;
+   left: 14px;
+   padding: 5px 15px 5px 15px;
+   border-radius: 9px;
+   border: 0.9px solid rgb(190, 187, 187);
+  }
+
+  p {
+   font-size: 11px;
+  }
+
+  .card-header {
+   .Cate {
+    background-color: $header-bg-Color;
+    border-radius: $Radius;
+   }
+
+   .Fee {
+    background-color: $BG-Fee;
+    border-radius: $Radius;
+   }
+  }
+
+  .mat-mdc-card-content {
+   font-weight: bold;
+  }
+
+  .mat-mdc-card-footer {
+   .icon {
+    color: $iconColor;
+   }
+
+   p {
+    color: $iconColor;
+   }
+  }
+
+
+
+ }
+
+ .Paginator {
+  .active {
+   background-color: $header-bg-Color;
+
+  }
+ }
+
+}
