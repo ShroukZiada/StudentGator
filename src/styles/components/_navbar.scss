@@ -26,4 +26,19 @@ nav {
 
   }
  }
+
+ .Programms {
+  color: $main-Color !important;
+
+  &::after {
+   position: absolute;
+   content: "";
+   width: 85px;
+   height: 2px;
+   background-color: $main-Color;
+   top: 50px;
+   left: 10px;
+   transition: all ease-out 0.5;
+  }
+ }
 }
